@@ -1,0 +1,296 @@
+1
+Due to the course requirement, I feel like that we should be using english from now on.
+To begin with, could you help be pinpoint the design idea, generating a prompt that can allow me to hand to an model agent generating the code. Please make sure that the design elements are not AI-generated as a part of course requirement
+
+
+2
+Build a clean, modern single-page personal portfolio website in HTML/CSS, with minimal JavaScript only if needed.
+
+The visual identity should be inspired by:
+
+- Dinamo Zagreb blue as the primary color
+- Croatia’s red-and-white checkerboard as a secondary motif
+
+The site should feel:
+
+- clean
+- structured
+- modern
+- slightly sporty
+- slightly editorial
+- professional and technical
+
+Most importantly, avoid the generic “AI-generated website” aesthetic. Do not use:
+
+- excessive gradients
+- glassmorphism
+- glowing effects
+- cyberpunk/neon styling
+- generic floating rounded cards everywhere
+- oversized decorative blobs
+- excessive animations
+- overly polished startup-template visuals
+
+Use blue as the dominant accent. Red-and-white checkerboard elements should be subtle and used sparingly, for example as a small corner detail, section divider, footer accent, or small motif near the site name.
+
+Use plenty of whitespace, strong typography, thin borders, clean alignment, and a clear grid.
+
+Site sections:
+
+1. Home
+2. Education & Experience
+3. Projects
+4. Interests
+5. Contact
+
+Navigation:
+
+- Left: FLETCHER ZHU
+- Right: HOME / EDUCATION / PROJECTS / INTERESTS / CONTACT
+
+Home:
+
+- Large name
+- Short tagline
+- Brief introduction
+- Optional image placeholder
+
+Education & Experience:
+
+- Clear timeline or structured list
+- Year, institution/organization, role/degree, short description
+
+Projects:
+
+- Visually important section
+- Project title, description, technologies/topics, link, optional image
+- Prefer editorial/grid layouts instead of generic cards
+
+Interests:
+
+- Personal but visually consistent
+- Can include football, F1, chess, and film
+
+Contact:
+
+- Email
+- GitHub
+- LinkedIn
+
+Optional section numbering:
+01 / HOME
+02 / EDUCATION & EXPERIENCE
+03 / PROJECTS
+04 / INTERESTS
+05 / CONTACT
+
+Do not add major animations yet. Simple hover states are fine.
+
+Use semantic HTML and readable CSS. Keep the structure easy to modify later.
+
+Do not invent personal information; use placeholders where needed.
+
+The final result should look intentionally designed by a student not like a generic AI-generated portfolio template.
+
+
+
+
+3 
+now we have a working version generated, I will show you later
+
+but a few parts is really bad
+
+
+
+4 
+1. the background collor would better be blue
+2. I don't like the words and titles being this huge, I would like a sense of order in the website, which fits with my character.
+3. I would like all the normal words being black.
+4. Do not give a feeling of myself talking to the person visiting the site. I want them to be just objective exhibition
+5. red-and-white checkerboard design is not used, and should be more obvious
+
+
+
+
+
+5 
+The problems are still huge:
+
+The website is not organized, and I don't like it. The problems are :
+
+1. The fonts should be all the same through out the pages, except for the topic for each page. and the font should be larger.
+2.  Do not organize the project with one on the left, and the rest two on the right, that is really disorganized.
+3. all information should be presented with straightforward expression, "Engineering, competition, and performance." is uncessary, can be replaced with placeholder introducting my favourite team or players, with link to them
+4. make the blue darker (maybe the opacity of the blue on dinamo's logo? )
+5. red-and-white checkerboard design seems to not work that well, you can remove them
+
+(before you start, do you think my prompt is clear?)
+
+
+
+6
+You can start to change the file that you generated last time. feel free to change anything. ask if you have questions.
+
+
+
+
+
+7  
+Good, you made progress (but still a lot to change) and I can feel that you do understand by previous insturctions. Here are the remaining parts:
+
+1.  The blue background color can be darker
+2.  I think each top level section should occupy a page, I want to make the feeling of having different pages. I don't want my website viewer treat the entire website as an entire page, this is not organized
+3. More importantly, the fonts are too small too hard to read.
+
+(before you start, do you think my prompt is clear?)  
+
+
+
+
+
+8
+You can start to change the file that you generated last time. feel free to change anything. ask if you have questions.
+
+
+
+
+
+
+
+
+9 
+Good, you made progress (but still a lot to change) and I can feel that you do understand by previous insturctions. Here are the remaining parts:
+
+1.  The blue background color can be darker
+2.  I think each top level section should occupy a page, I want to make the feeling of having different pages. I don't want my website viewer treat the entire website as an entire page, this is not organized
+3. More importantly, the fonts are too small too hard to read.
+
+(before you start, do you think my prompt is clear?)  
+
+
+
+
+
+
+10
+There are some further instructions:
+
+1. the color can still be about 15% darker I guess ( at least we can try that)
+2. Remove the 01, 02, 03, 04, 05 in front of each topic, that is unnecessary
+3. The footer and the header of the website can be strips of red-and-white checkerboard (the design of HNS nation team!)
+
+(before you start, do you think my prompt is clear?)
+(before you start, do you think my prompt is clear?)
+
+
+
+
+11
+1. I think the footer design is good, I like the dark blue black ground and white words (but only for footer and header, the rest unchanged) . Also,  red-and-white checkerboard does not fit in that well. I am thinking of doing half dark blue and the half red-and-white checkerboard. With red-and-white checkerboard and black words on the upper left half, and dark blue with white words on the lower right half, let them split the header/footer (just like the design of dinamo's logo)
+2. In the Interest module, remove film and replace with Overwatch.
+3. In the interest module, put the link right on the name of the players, and I want to leave a square space on the right for putting a phote.
+
+before you start, do you think my prompt is clear?)  
+
+
+
+
+12 
+It looks like having black words on the red-and-white checkerboard  is not a good idea, I think it is better to only have white words on the blue part. Therefore, now the red-and-white checkerboard  and the dark blue does not have to split in half half. red-and-white checkerboard can be less than a half, and could have the shape of a triangle.
+
+(before you start, do you think my prompt is clear?)  
+
+
+
+
+13 
+1. I think make a small trapezoid is better, and "FLETCHER ZHU" can be move to the left a bit
+2. For the footer, the trapezoid should occupy the top left corner, not the bottem left (i.e., footer and header same design)
+
+
+
+14 
+The trapezoid should touch the bottom line (i.e. actually both top left and bottom left corner should be occupied, but the top side should be longer)
+
+Also, The **Carnegie Mellon University**  on the first page, should be on a different Line 
+
+(clear?)
+
+
+
+
+
+15 
+Now there are a few small changes:
+
+0. The bottom side of the trapezoid and be a little(10% shorter) for both footer and header
+1. Vertically Narrow the footer a bit 
+2. "Portfolio of academic background, technical projects, selected interests, and contact information" and add a bit more distances between Fletcher Zhu, **Electrical & Computer Engineering, Carnegie Mellon University, these 3 lines**
+3. In the education sections, move the "education" (a bit!) to the top left
+
+    Also, I want to have a small space for pictures to the right of the words    
+of each education experience  
+
+(clear)?
+
+
+
+
+16 
+I want this sentence "Portfolio of academic background, technical projects, selected interests, and contact information"  to be removed.
+You can make the changes
+
+
+
+
+
+17
+Now I am going to fill in concrete contents, please teach me how to change the HTML file
+
+(use english as the prompt will be recorded)
+
+
+
+
+
+18 
+Before I upload the images, I need to make the changes:
+
+1. In the project section: put the year next to the project link, so that there will be more space for the title.
+2. In the Interest section: Change indention, such that Croatia aligns with GNK, the same for the two "Chess" words
+3. Remove Favourite driver section
+4.  make 1715 bold
+5. Remove the Player 2 for Overwatch.
+6. In contact part: remove the link to my Gmail
+7. Temporarily make the link to LinkedIn unavailable (currently I am not using linked in)
+
+Are these instructions clear
+
+
+
+
+
+19
+There are still some indention problems:
+
+1. The year in project 2 and project 3 are messed-up
+2. bolded “Chess” should align with Title 
+
+Besides
+
+1. Make the "relevant coursework" and "area" (i.e. all subtitles in the education part) bold
+2. I still want my gmail show up, but just don't directly provide a link to it, just typed there
+
+(Are these instructions clear?)
+
+
+
+
+
+20
+https://github.com/fletcherzzk/fletcherzzk.github.io/blob/main/images/101.png
+(URL example just to help you, it it fine if this is unnecessary)
+
+Go ahead and make the changes for me 
+
+

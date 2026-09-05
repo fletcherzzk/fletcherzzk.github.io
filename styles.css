@@ -1307,3 +1307,349 @@ dd {
     justify-self: start;
   }
 }
+
+/* v10 — portfolio images */
+.education-photo,
+.interest-photo,
+.project-visual {
+  overflow: hidden;
+}
+
+.education-photo img,
+.interest-photo img,
+.project-visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Keep logos/crests and the catenary plot fully visible rather than cropping them. */
+.education-photo img,
+.interest-photo img {
+  padding: 6px;
+}
+
+.project-visual img {
+  padding: 8px;
+}
+
+/* v11 — refined image fitting */
+
+/* Education logos should fill the square slots cleanly without the artificial inner padding. */
+.education-photo {
+  padding: 0;
+  overflow: hidden;
+}
+
+.education-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  object-fit: cover;
+}
+
+/* The catenary plot has a more natural 3:2-ish ratio than 16:9. */
+.project-visual-plot {
+  aspect-ratio: 1.52 / 1;
+  background: #ffffff;
+}
+
+.project-visual-plot img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  object-fit: contain;
+}
+
+/* Interest images are logos/crests, not photographs:
+   remove the forced square-frame look and let each logo keep its natural shape. */
+.interest-photo.interest-logo {
+  width: 150px;
+  height: 138px;
+  aspect-ratio: auto;
+  padding: 0;
+  overflow: visible;
+  border: 0;
+  background: transparent;
+}
+
+.interest-photo.interest-logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  object-fit: contain;
+}
+
+.interest-photo.interest-logo-wide {
+  height: 92px;
+}
+
+.interest-photo.interest-logo-tall {
+  height: 148px;
+}
+
+@media (max-width: 1050px) {
+  .interest-photo.interest-logo {
+    width: 130px;
+    height: 120px;
+  }
+
+  .interest-photo.interest-logo-wide {
+    height: 80px;
+  }
+
+  .interest-photo.interest-logo-tall {
+    height: 130px;
+  }
+}
+
+@media (max-width: 760px) {
+  .interest-photo.interest-logo {
+    width: 118px;
+    height: 108px;
+  }
+
+  .interest-photo.interest-logo-wide {
+    height: 72px;
+  }
+
+  .interest-photo.interest-logo-tall {
+    height: 118px;
+  }
+}
+
+@media (max-width: 520px) {
+  .interest-photo.interest-logo {
+    width: min(150px, 45vw);
+    height: 130px;
+  }
+
+  .interest-photo.interest-logo-wide {
+    height: 82px;
+  }
+
+  .interest-photo.interest-logo-tall {
+    height: 145px;
+  }
+}
+
+/* v12 — standardize Interest image sizing and alignment */
+.interest-row {
+  grid-template-columns: 175px minmax(0, 1fr) 150px;
+  align-items: center;
+}
+
+.interest-photo.interest-logo,
+.interest-photo.interest-logo-wide,
+.interest-photo.interest-logo-tall {
+  width: 150px;
+  height: 150px;
+  aspect-ratio: 1 / 1;
+  justify-self: end;
+  overflow: hidden;
+  padding: 10px;
+  border: 1.5px solid var(--ink);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.interest-photo.interest-logo img,
+.interest-photo.interest-logo-wide img,
+.interest-photo.interest-logo-tall img {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Wide logos need less vertical padding so they remain readable. */
+.interest-photo.interest-logo-wide {
+  padding: 18px 8px;
+}
+
+/* Tall crests/pawns need a little less horizontal padding. */
+.interest-photo.interest-logo-tall {
+  padding: 6px 14px;
+}
+
+@media (max-width: 1050px) {
+  .interest-row {
+    grid-template-columns: 145px minmax(0, 1fr) 130px;
+  }
+
+  .interest-photo.interest-logo,
+  .interest-photo.interest-logo-wide,
+  .interest-photo.interest-logo-tall {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media (max-width: 760px) {
+  .interest-row {
+    grid-template-columns: 1fr 118px;
+  }
+
+  .interest-photo.interest-logo,
+  .interest-photo.interest-logo-wide,
+  .interest-photo.interest-logo-tall {
+    width: 118px;
+    height: 118px;
+  }
+}
+
+@media (max-width: 520px) {
+  .interest-row {
+    grid-template-columns: 1fr;
+  }
+
+  .interest-photo.interest-logo,
+  .interest-photo.interest-logo-wide,
+  .interest-photo.interest-logo-tall {
+    grid-column: 1;
+    grid-row: auto;
+    width: min(150px, 45vw);
+    height: min(150px, 45vw);
+    justify-self: start;
+  }
+}
+
+/* v13 — natural Interest logo layout */
+.interest-row {
+  grid-template-columns: 175px minmax(0, 1fr) 180px;
+  align-items: center;
+}
+
+.interest-photo.interest-logo,
+.interest-photo.interest-logo-wide,
+.interest-photo.interest-logo-tall {
+  display: flex;
+  width: 180px;
+  height: 135px;
+  aspect-ratio: auto;
+  align-items: center;
+  justify-content: center;
+  justify-self: end;
+  padding: 0;
+  overflow: visible;
+  border: 0;
+  background: transparent;
+}
+
+.interest-photo.interest-logo img,
+.interest-photo.interest-logo-wide img,
+.interest-photo.interest-logo-tall img {
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 0;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Balance the visual size of each very different logo shape. */
+.interest-logo-tall img {
+  max-width: 112px;
+  max-height: 132px;
+}
+
+.interest-logo-wide img {
+  max-width: 165px;
+  max-height: 88px;
+}
+
+.interest-row:nth-child(3) .interest-logo img {
+  max-width: 105px;
+  max-height: 125px;
+}
+
+.interest-row:nth-child(4) .interest-logo-wide img {
+  max-width: 168px;
+  max-height: 92px;
+}
+
+@media (max-width: 1050px) {
+  .interest-row {
+    grid-template-columns: 145px minmax(0, 1fr) 150px;
+  }
+
+  .interest-photo.interest-logo,
+  .interest-photo.interest-logo-wide,
+  .interest-photo.interest-logo-tall {
+    width: 150px;
+    height: 120px;
+  }
+
+  .interest-logo-tall img {
+    max-width: 96px;
+    max-height: 116px;
+  }
+
+  .interest-logo-wide img {
+    max-width: 140px;
+    max-height: 74px;
+  }
+
+  .interest-row:nth-child(3) .interest-logo img {
+    max-width: 90px;
+    max-height: 112px;
+  }
+
+  .interest-row:nth-child(4) .interest-logo-wide img {
+    max-width: 145px;
+    max-height: 78px;
+  }
+}
+
+@media (max-width: 760px) {
+  .interest-row {
+    grid-template-columns: 1fr 128px;
+  }
+
+  .interest-photo.interest-logo,
+  .interest-photo.interest-logo-wide,
+  .interest-photo.interest-logo-tall {
+    width: 128px;
+    height: 106px;
+  }
+
+  .interest-logo-tall img {
+    max-width: 84px;
+    max-height: 102px;
+  }
+
+  .interest-logo-wide img {
+    max-width: 120px;
+    max-height: 62px;
+  }
+
+  .interest-row:nth-child(3) .interest-logo img {
+    max-width: 78px;
+    max-height: 100px;
+  }
+
+  .interest-row:nth-child(4) .interest-logo-wide img {
+    max-width: 124px;
+    max-height: 68px;
+  }
+}
+
+@media (max-width: 520px) {
+  .interest-row {
+    grid-template-columns: 1fr;
+  }
+
+  .interest-photo.interest-logo,
+  .interest-photo.interest-logo-wide,
+  .interest-photo.interest-logo-tall {
+    grid-column: 1;
+    grid-row: auto;
+    width: 170px;
+    height: 125px;
+    justify-self: start;
+  }
+}
