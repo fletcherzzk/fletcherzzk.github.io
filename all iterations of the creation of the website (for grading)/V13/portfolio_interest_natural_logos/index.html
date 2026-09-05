@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fletcher Zhu - personal portfolio">
+  <title>Fletcher Zhu | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="#home" aria-label="Fletcher Zhu home">FLETCHER ZHU</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#interests">Interests</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero section-shell">
+      <div class="hero-main">
+        <h1>Fletcher Zhu</h1>
+        <p class="hero-role"><span class="hero-major">Electrical &amp; Computer Engineering</span><span class="hero-university">Carnegie Mellon University</span></p>
+      </div>
+
+      <aside class="profile-panel" aria-label="Profile information">
+        <div class="portrait-placeholder" role="img" aria-label="Portrait placeholder">
+          <span>PORTRAIT</span>
+        </div>
+        <dl class="profile-facts">
+          <div>
+            <dt>Hometown</dt>
+            <dd>Beijing, China</dd>
+          </div>
+          <div>
+            <dt>Field</dt>
+            <dd>Electrical &amp; Computer Engineering</dd>
+          </div>
+          <div>
+            <dt>Focus</dt>
+            <dd>Computer Architecture</dd>
+          </div>
+        </dl>
+      </aside>
+    </section>
+
+    <section id="education" class="portfolio-section section-shell">
+      <header class="section-header">
+        <h2>Education</h2>
+      </header>
+
+      <div class="section-content record-list">
+        <article class="record-row">
+          <p class="record-date">2025 — Present</p>
+          <div class="record-body">
+            <h3>Carnegie Mellon University</h3>
+            <p class="record-label">B.S. Electrical and Computer Engineering</p>
+            <p><strong>Area:</strong> Hardware<br>
+               <strong>Relevant Coursework:</strong> 18240, 18220
+            </p>
+          </div>
+          <div class="education-photo"><img src="images/cmu.png" alt="Carnegie Mellon University"></div>
+        </article>
+
+        <article class="record-row">
+          <p class="record-date">2025 — Present </p>
+          <div class="record-body">
+            <h3>Carnegie Mellon University</h3>
+            <p class="record-label">Minor in Computer Science</p>
+            <p><strong>Relevant Coursework:</strong> 15122, 15150, 15251, 15210<br>
+               <strong>Programming Languages:</strong> C, C++, Python, Java, SML
+            </p>
+          </div>
+          <div class="education-photo"><img src="images/cmu.png" alt="Carnegie Mellon University"></div>
+        </article>
+
+        <article class="record-row">
+          <p class="record-date">2019 - 2025</p>
+          <div class="record-body">
+            <h3>Beijing 101 High School</h3>
+            <p class="record-label">Middle school and High School Diploma</p>
+            <p><strong>Achievements:</strong> Third Prize in Physics Competition</p>
+          </div>
+          <div class="education-photo"><img src="images/101.png" alt="Beijing 101 High School"></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="portfolio-section section-shell">
+      <header class="section-header">
+        <h2>Projects</h2>
+      </header>
+
+      <div class="section-content project-grid">
+        <article class="project-card">
+          <div class="project-visual project-visual-plot"><img src="images/project1.png" alt="Catenary curve simulation plot"></div>
+          <div class="project-heading">
+            <h3>[Python Simulation of Catenary Curves]</h3>
+          </div>
+          <p>Simulated catenary curves in Python and studied how physical parameters affect rope shape.</p>
+          <dl class="project-facts">
+            <div><dt>Area</dt><dd>[Computational Physics]</dd></div>
+            <div><dt>Tools</dt><dd>[Python]</dd></div>
+          </dl>
+          <div class="project-footer">
+            <a class="item-link" href="https://github.com/boonrm/33151-catenary-curves">Project link ↗</a>
+            <span class="project-year">[2025]</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual"><span>PROJECT 02</span></div>
+          <div class="project-heading">
+            <h3>[C0 Virtual machine]</h3>
+          </div>
+          <p>Implemented a C0 virtual machine for C0 bytecode with memory management.</p>
+          <dl class="project-facts">
+            <div><dt>Area</dt><dd>Systems</dd></div>
+            <div><dt>Tools</dt><dd>C</dd></div>
+          </dl>
+          <div class="project-footer">
+            <a class="item-link" href="#">Project link ↗</a>
+            <span class="project-year">[2026]</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual"><span>PROJECT 03</span></div>
+          <div class="project-heading">
+            <h3>[Project title]</h3>
+          </div>
+          <p>[One or two sentences stating what the project is, what was implemented, and the result.]</p>
+          <dl class="project-facts">
+            <div><dt>Area</dt><dd>[Web / Research]</dd></div>
+            <div><dt>Tools</dt><dd>[HTML · CSS · JavaScript]</dd></div>
+          </dl>
+          <div class="project-footer">
+            <a class="item-link" href="#">Project link ↗</a>
+            <span class="project-year">[2025]</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="interests" class="portfolio-section section-shell">
+      <header class="section-header">
+        <h2>Interests</h2>
+      </header>
+
+      <div class="section-content interest-list">
+        <article class="interest-row">
+          <h3>Soccer</h3>
+          <div class="interest-details">
+            <p class="interest-detail-line">
+              <strong class="interest-label">Favorite teams:</strong>
+              <span class="interest-value"><a href="https://hns.team/en/">Croatia National Team (HNS)</a>, <a href="https://gnkdinamo.hr/en">GNK Dinamo Zagreb</a></span>
+            </p>
+            <p class="interest-detail-line">
+              <strong class="interest-label">Favorite players:</strong>
+              <span class="interest-value"><a href="https://www.transfermarkt.us/luka-stojkovic/profil/spieler/665266">Luka Stojkovic</a>, <a href="https://www.transfermarkt.us/petar-sucic/profil/spieler/668207">Petar Sučić</a></span>
+            </p>
+          </div>
+          <div class="interest-photo interest-logo interest-logo-tall"><img src="images/soccer.png" alt="Croatia national football team crest"></div>
+        </article>
+
+        <article class="interest-row">
+          <h3>Formula 1</h3>
+          <div class="interest-details">
+            <p class="interest-detail-line">
+              <strong class="interest-label">Favorite team:</strong>
+              <span class="interest-value"><a href="https://www.mercedesamgf1.com/">Mercedes-AMG Petronas F1 Team</a></span>
+            </p>
+          </div>
+          <div class="interest-photo interest-logo interest-logo-wide"><img src="images/F1.png" alt="Formula 1 logo"></div>
+        </article>
+
+        <article class="interest-row">
+          <h3>Chess</h3>
+          <div class="interest-details">
+            <p class="interest-detail-line">
+              <strong class="interest-label">Title:</strong>
+              <span class="interest-value"><a href="#">Chess Association Master — Chinese Chess Association</a></span>
+            </p>
+            <p class="interest-detail-line">
+              <strong class="interest-label">Chess.com Blitz Rating:</strong>
+              <span class="interest-value"><strong>1715</strong></span>
+            </p>
+          </div>
+          <div class="interest-photo interest-logo"><img src="images/chess.png" alt="Chess pawn"></div>
+        </article>
+
+        <article class="interest-row">
+          <h3>Overwatch</h3>
+          <div class="interest-details">
+            <p class="interest-detail-line">
+              <strong class="interest-label">Most played heroes:</strong>
+              <span class="interest-value"><a href="https://overwatch.blizzard.com/en-us/heroes/sigma/">Sigma</a>, <a href="https://overwatch.blizzard.com/en-us/heroes/tracer/">Tracer</a></span>
+            </p>
+            <p class="interest-detail-line">
+              <strong class="interest-label">Favorite team:</strong>
+              <span class="interest-value"><a href="https://en.wikipedia.org/wiki/Seoul_Dynasty">Seoul Dynasty</a></span>
+            </p>
+            <p class="interest-detail-line">
+              <strong class="interest-label">Favorite players:</strong>
+              <span class="interest-value"><a href="Joon-yeong “Profit” Park">Joon-yeong “Profit” Park</a></span>
+            </p>
+          </div>
+          <div class="interest-photo interest-logo interest-logo-wide"><img src="images/overwatch.png" alt="Overwatch logo"></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="portfolio-section section-shell">
+      <header class="section-header">
+        <h2>Contact</h2>
+      </header>
+
+      <div class="section-content contact-list">
+        <div class="contact-row">
+          <span>Email</span>
+          <span>fletcherzzk@gmail.com</span>
+        </div>
+        <div class="contact-row">
+          <span>GitHub</span>
+          <a href="https://github.com/fletcherzzk" rel="noreferrer">GitHub profile ↗</a>
+        </div>
+        <div class="contact-row">
+          <span>LinkedIn</span>
+          <span class="contact-unavailable">Unavailable for now</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2026 Fletcher Zhu</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
